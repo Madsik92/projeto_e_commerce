@@ -4,7 +4,12 @@ import { colors } from "./src/util/Colors";
 
 export function main() {
 
-    let opcao: number;
+    let opcao, id, tipo, preco: number;
+    let nome, capa, midea: string;
+
+    const tipoProduto = ['Ebook' , 'LivroFisico'];
+
+
 
     while (true) {
         menu()
@@ -13,7 +18,7 @@ export function main() {
         if (opcao == 0) {
             console.log(colors.fg.whitestrong);
             console.log("\nPergaminho Flutuante");
-            console.log("\nLevar a magia para sua estante!");
+            console.log("\nLevamos a magia para sua estante!");
             about();
             console.log(colors.reset);
             process.exit(0);
